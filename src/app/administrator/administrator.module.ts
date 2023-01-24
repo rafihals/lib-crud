@@ -19,6 +19,9 @@ import { TableComponent } from './table/table.component';
 import { MatSortModule } from '@angular/material/sort';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogAddComponent } from './dialog-add/dialog-add.component';
+
 
 const routes : Routes = [
   {
@@ -41,7 +44,6 @@ const routes : Routes = [
       {
         path:'log-out',component:LogoutComponent
       },
-     
     ]
   }
 ]
@@ -53,6 +55,7 @@ const routes : Routes = [
     ListComponent,
     LogoutComponent,
     TableComponent,
+    DialogAddComponent,
   ],
   imports: [
     CommonModule,
@@ -70,6 +73,8 @@ const routes : Routes = [
     MatSortModule,
     TextFieldModule,
     MatInputModule,
+    MatDialogModule,
+    
   ]
 })
 export class AdministratorModule { }

@@ -16,3 +16,10 @@
     background-color: blue;
     padding-left: 20px;
 }
+
+$headerColor:#00AFA3;
+$alternateColor:rgba(0,0,0,0.12);
+
+th {
+    background-color: $headerColor;
+}
